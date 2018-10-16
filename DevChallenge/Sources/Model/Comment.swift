@@ -1,5 +1,5 @@
 //
-//  Bounds.swift
+//  Comment.swift
 //  DevChallenge
 //
 //  Created by Igor Tudoran on 10/16/18.
@@ -9,7 +9,9 @@
 import Foundation
 
 
-struct Bounds {
-    var upper: Int
-    var lower: Int
+struct Comment {
+    var commentID: Int!
+    var name: String!
+    var email: String!
+    var body: String!
 }

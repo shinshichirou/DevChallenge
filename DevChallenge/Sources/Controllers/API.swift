@@ -60,7 +60,8 @@ enum Path: String {
 }
 
 enum APIRequest {
-    case getComments()
+    case getAllComments()
+    case getComment(_ identifier: Int)
 }
 
 extension RequestProtocol {
@@ -83,14 +84,16 @@ extension APIRequest: RequestProtocol {
     
     var path: Path {
         switch self {
-        case .getComments:
+        case .getAllComments,
+             .getComment:
             return .comments
         }
     }
     
     var method: HTTPMethod {
         switch self {
-        case .getComments:
+        case .getAllComments,
+             .getComment:
             return .get
         }
     }
@@ -111,6 +114,8 @@ extension APIRequest: RequestProtocol {
     
     var queryID: String? {
         switch self {
+        case .getComment(let identifier):
+            return "\(identifier)"
         default:
             return nil
         }

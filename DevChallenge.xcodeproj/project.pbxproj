@@ -26,6 +26,8 @@
 		F48AD505217601D6006F87EB /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD504217601D6006F87EB /* Bounds.swift */; };
 		F48AD50921760D9F006F87EB /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD50821760D9F006F87EB /* CommentCell.swift */; };
 		F48AD50D21761BF6006F87EB /* CancelableLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD50C21761BF6006F87EB /* CancelableLoadingView.swift */; };
+		F48AD50F21762916006F87EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD50E21762916006F87EB /* DataManager.swift */; };
+		F48AD511217629BD006F87EB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD510217629BD006F87EB /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +65,8 @@
 		F48AD504217601D6006F87EB /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
 		F48AD50821760D9F006F87EB /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		F48AD50C21761BF6006F87EB /* CancelableLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelableLoadingView.swift; sourceTree = "<group>"; };
+		F48AD50E21762916006F87EB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F48AD510217629BD006F87EB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F48AD5022175FE42006F87EB /* API.swift */,
+				F48AD50E21762916006F87EB /* DataManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				F48AD504217601D6006F87EB /* Bounds.swift */,
+				F48AD510217629BD006F87EB /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 				F48AD4F62175F43D006F87EB /* InputViewController.swift in Sources */,
 				F48AD4F82175F451006F87EB /* ListViewController.swift in Sources */,
 				F48AD50921760D9F006F87EB /* CommentCell.swift in Sources */,
+				F48AD511217629BD006F87EB /* Comment.swift in Sources */,
 				F48AD505217601D6006F87EB /* Bounds.swift in Sources */,
+				F48AD50F21762916006F87EB /* DataManager.swift in Sources */,
 				F48AD5032175FE42006F87EB /* API.swift in Sources */,
 				F48AD4FE2175FBFF006F87EB /* Constants.swift in Sources */,
 			);

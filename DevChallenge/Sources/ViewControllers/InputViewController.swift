@@ -56,8 +56,8 @@ class InputViewController: UIViewController {
     private func bounds() -> Bounds? {
         if let lowerBoundText = lowerBoundField.text,
             let upperBoundText = upperBoundField.text,
-            let lower = UInt(lowerBoundText),
-            let upper = UInt(upperBoundText) {
+            let lower = Int(lowerBoundText),
+            let upper = Int(upperBoundText) {
             return Bounds(upper: upper,
                           lower: lower)
         }
