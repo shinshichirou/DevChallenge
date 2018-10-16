@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 extension UIViewController {
     
@@ -22,6 +23,22 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+}
+
+extension UIViewController: NVActivityIndicatorViewable {
+    
+    func showHUD() {
+        self.startAnimating(type: .circleStrokeSpin)
+    }
+    
+    func hideHUD() {
+        self.stopAnimating()
+    }
+    
+    func showAlert(_ title: String? = nil, text: String) {
+        UIAlertController.show(title, text: text, viewController: self)
     }
     
 }

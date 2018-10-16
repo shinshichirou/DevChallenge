@@ -22,9 +22,10 @@
 		F48AD4FA2175F96F006F87EB /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4F92175F96F006F87EB /* UIViewControllerExtensions.swift */; };
 		F48AD4FC2175FB8D006F87EB /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4FB2175FB8D006F87EB /* UIAlertControllerExtensions.swift */; };
 		F48AD4FE2175FBFF006F87EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4FD2175FBFF006F87EB /* Constants.swift */; };
-		F48AD5002175FCA7006F87EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4FF2175FCA7006F87EB /* BaseViewController.swift */; };
 		F48AD5032175FE42006F87EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD5022175FE42006F87EB /* API.swift */; };
 		F48AD505217601D6006F87EB /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD504217601D6006F87EB /* Bounds.swift */; };
+		F48AD50921760D9F006F87EB /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD50821760D9F006F87EB /* CommentCell.swift */; };
+		F48AD50D21761BF6006F87EB /* CancelableLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD50C21761BF6006F87EB /* CancelableLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,9 +59,10 @@
 		F48AD4F92175F96F006F87EB /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		F48AD4FB2175FB8D006F87EB /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
 		F48AD4FD2175FBFF006F87EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F48AD4FF2175FCA7006F87EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F48AD5022175FE42006F87EB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F48AD504217601D6006F87EB /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		F48AD50821760D9F006F87EB /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		F48AD50C21761BF6006F87EB /* CancelableLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelableLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				F48AD4C72175EC98006F87EB /* AppDelegate.swift */,
 				F48AD4F22175F3F8006F87EB /* ViewControllers */,
+				F48AD50721760D84006F87EB /* Views */,
 				F48AD4F32175F403006F87EB /* Controllers */,
 				F48AD4F42175F40D006F87EB /* Classes */,
 				F48AD506217603CE006F87EB /* Model */,
@@ -158,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				F48AD4FD2175FBFF006F87EB /* Constants.swift */,
-				F48AD4FF2175FCA7006F87EB /* BaseViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -178,6 +180,15 @@
 				F48AD504217601D6006F87EB /* Bounds.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F48AD50721760D84006F87EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD50821760D9F006F87EB /* CommentCell.swift */,
+				F48AD50C21761BF6006F87EB /* CancelableLoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +266,10 @@
 				F48AD4FA2175F96F006F87EB /* UIViewControllerExtensions.swift in Sources */,
 				F48AD4C82175EC98006F87EB /* AppDelegate.swift in Sources */,
 				F48AD4FC2175FB8D006F87EB /* UIAlertControllerExtensions.swift in Sources */,
+				F48AD50D21761BF6006F87EB /* CancelableLoadingView.swift in Sources */,
 				F48AD4F62175F43D006F87EB /* InputViewController.swift in Sources */,
 				F48AD4F82175F451006F87EB /* ListViewController.swift in Sources */,
-				F48AD5002175FCA7006F87EB /* BaseViewController.swift in Sources */,
+				F48AD50921760D9F006F87EB /* CommentCell.swift in Sources */,
 				F48AD505217601D6006F87EB /* Bounds.swift in Sources */,
 				F48AD5032175FE42006F87EB /* API.swift in Sources */,
 				F48AD4FE2175FBFF006F87EB /* Constants.swift in Sources */,

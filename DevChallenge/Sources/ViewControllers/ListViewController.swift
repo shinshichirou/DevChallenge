@@ -7,26 +7,47 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class ListViewController: BaseViewController {
+class ListViewController: UITableViewController {
 
     var bounds: Bounds!
+    private var comments = [JSON]()
+    private let cellID = "CommentCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.tableFooterView = UIView()
+        loadComments()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func loadComments() {
+        showHUD()
+        API.shared.request(.getComments()) { (json, error) in
+            self.comments = json.arrayValue.filter {
+                $0["id"].intValue >= self.bounds.lower &&
+                    $0["id"].intValue <= self.bounds.upper
+                }
+                .sorted()
+            self.tableView.reloadData()
+            self.hideHUD()
+        }
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return comments.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID,
+                                                    for: indexPath) as? CommentCell {
+            let comment = comments[indexPath.row]
+            cell.nameLabel.text = comment["name"].stringValue
+            cell.emailLabel.text = comment["email"].stringValue
+            cell.bodyLabel.text = comment["body"].stringValue
+            return cell
+        }
+        return UITableViewCell()
+    }
 
 }

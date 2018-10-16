@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InputViewController: BaseViewController {
+class InputViewController: UIViewController {
 
     @IBOutlet weak var lowerBoundField: UITextField!
     @IBOutlet weak var upperBoundField: UITextField!
@@ -17,6 +17,8 @@ class InputViewController: BaseViewController {
             commentsButton.isEnabled = false
         }
     }
+    
+    private var loadingView: CancelableLoadingView!
     
     // MARK: - View lifecycle
     
@@ -28,7 +30,7 @@ class InputViewController: BaseViewController {
     // MARK: - Actions
     
     @IBAction func commentsButtonPressed(_ sender: Any) {
-        showHUD()
+        showLoading()
         let randomTime = TimeInterval(arc4random_uniform(3) + 3)
         perform(#selector(openComments), with: nil, afterDelay: randomTime)
     }
@@ -37,9 +39,16 @@ class InputViewController: BaseViewController {
         checkFieldsValues()
     }
     
+    private func showLoading() {
+        if let nav = navigationController {
+            loadingView = CancelableLoadingView(delegate: self)
+            loadingView.showIn(nav.view)
+        }
+    }
+    
     // Delayed selector.
     @objc private func openComments() {
-        hideHUD()
+        loadingView.close()
         self.performSegue(withIdentifier: SegueIdentifier.toComments, sender: self)
     }
     
@@ -58,7 +67,7 @@ class InputViewController: BaseViewController {
     // Checking if field values are correct.
     private func checkFieldsValues() {
         if let bounds = bounds(),
-            bounds.lower <= bounds.upper {
+            bounds.lower < bounds.upper {
             commentsButton.isEnabled = true
         } else {
             commentsButton.isEnabled = false
@@ -93,6 +102,14 @@ extension InputViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let characterSet = CharacterSet(charactersIn: string)
         return CharacterSet.decimalDigits.isSuperset(of: characterSet)
+    }
+    
+}
+
+extension InputViewController: CancelableLoadingViewDelegate {
+    
+    func canceled() {
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
 }
