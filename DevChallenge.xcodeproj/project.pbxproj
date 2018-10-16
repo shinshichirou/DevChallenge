@@ -8,20 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		F48AD4C82175EC98006F87EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4C72175EC98006F87EB /* AppDelegate.swift */; };
-		F48AD4CA2175EC98006F87EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4C92175EC98006F87EB /* ViewController.swift */; };
 		F48AD4CD2175EC98006F87EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48AD4CB2175EC98006F87EB /* Main.storyboard */; };
 		F48AD4CF2175EC99006F87EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48AD4CE2175EC99006F87EB /* Assets.xcassets */; };
 		F48AD4D22175EC99006F87EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48AD4D02175EC99006F87EB /* LaunchScreen.storyboard */; };
+		F48AD4EA2175F3B6006F87EB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD4E42175F3A7006F87EB /* Alamofire.framework */; };
+		F48AD4EB2175F3B6006F87EB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD4E42175F3A7006F87EB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F48AD4EC2175F3B6006F87EB /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD4E52175F3A7006F87EB /* NVActivityIndicatorView.framework */; };
+		F48AD4ED2175F3B6006F87EB /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD4E52175F3A7006F87EB /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F48AD4EE2175F3B6006F87EB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD4E62175F3A7006F87EB /* SwiftyJSON.framework */; };
+		F48AD4EF2175F3B6006F87EB /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F48AD4E62175F3A7006F87EB /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F48AD4F62175F43D006F87EB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4F52175F43D006F87EB /* InputViewController.swift */; };
+		F48AD4F82175F451006F87EB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4F72175F451006F87EB /* ListViewController.swift */; };
+		F48AD4FA2175F96F006F87EB /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4F92175F96F006F87EB /* UIViewControllerExtensions.swift */; };
+		F48AD4FC2175FB8D006F87EB /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4FB2175FB8D006F87EB /* UIAlertControllerExtensions.swift */; };
+		F48AD4FE2175FBFF006F87EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4FD2175FBFF006F87EB /* Constants.swift */; };
+		F48AD5002175FCA7006F87EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD4FF2175FCA7006F87EB /* BaseViewController.swift */; };
+		F48AD5032175FE42006F87EB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD5022175FE42006F87EB /* API.swift */; };
+		F48AD505217601D6006F87EB /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48AD504217601D6006F87EB /* Bounds.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F48AD4E22175F315006F87EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F48AD4ED2175F3B6006F87EB /* NVActivityIndicatorView.framework in Embed Frameworks */,
+				F48AD4EB2175F3B6006F87EB /* Alamofire.framework in Embed Frameworks */,
+				F48AD4EF2175F3B6006F87EB /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F48AD4C42175EC98006F87EB /* DevChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48AD4C72175EC98006F87EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F48AD4C92175EC98006F87EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F48AD4CC2175EC98006F87EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F48AD4CE2175EC99006F87EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48AD4D12175EC99006F87EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F48AD4D32175EC99006F87EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48AD4E42175F3A7006F87EB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		F48AD4E52175F3A7006F87EB /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = SOURCE_ROOT; };
+		F48AD4E62175F3A7006F87EB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		F48AD4F52175F43D006F87EB /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		F48AD4F72175F451006F87EB /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F48AD4F92175F96F006F87EB /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		F48AD4FB2175FB8D006F87EB /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
+		F48AD4FD2175FBFF006F87EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F48AD4FF2175FCA7006F87EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F48AD5022175FE42006F87EB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F48AD504217601D6006F87EB /* Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48AD4EE2175F3B6006F87EB /* SwiftyJSON.framework in Frameworks */,
+				F48AD4EA2175F3B6006F87EB /* Alamofire.framework in Frameworks */,
+				F48AD4EC2175F3B6006F87EB /* NVActivityIndicatorView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F48AD4C62175EC98006F87EB /* DevChallenge */,
+				F48AD4E32175F376006F87EB /* Frameworks */,
 				F48AD4C52175EC98006F87EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +97,87 @@
 		F48AD4C62175EC98006F87EB /* DevChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				F48AD4C72175EC98006F87EB /* AppDelegate.swift */,
-				F48AD4C92175EC98006F87EB /* ViewController.swift */,
-				F48AD4CB2175EC98006F87EB /* Main.storyboard */,
+				F48AD4F12175F3ED006F87EB /* Sources */,
+				F48AD4F02175F3D5006F87EB /* Resources */,
+			);
+			path = DevChallenge;
+			sourceTree = "<group>";
+		};
+		F48AD4E32175F376006F87EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD4E42175F3A7006F87EB /* Alamofire.framework */,
+				F48AD4E52175F3A7006F87EB /* NVActivityIndicatorView.framework */,
+				F48AD4E62175F3A7006F87EB /* SwiftyJSON.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F48AD4F02175F3D5006F87EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F48AD4CE2175EC99006F87EB /* Assets.xcassets */,
+				F48AD4CB2175EC98006F87EB /* Main.storyboard */,
 				F48AD4D02175EC99006F87EB /* LaunchScreen.storyboard */,
 				F48AD4D32175EC99006F87EB /* Info.plist */,
 			);
-			path = DevChallenge;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F48AD4F12175F3ED006F87EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD4C72175EC98006F87EB /* AppDelegate.swift */,
+				F48AD4F22175F3F8006F87EB /* ViewControllers */,
+				F48AD4F32175F403006F87EB /* Controllers */,
+				F48AD4F42175F40D006F87EB /* Classes */,
+				F48AD506217603CE006F87EB /* Model */,
+				F48AD5012175FE2B006F87EB /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F48AD4F22175F3F8006F87EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD4F52175F43D006F87EB /* InputViewController.swift */,
+				F48AD4F72175F451006F87EB /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F48AD4F32175F403006F87EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD5022175FE42006F87EB /* API.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F48AD4F42175F40D006F87EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD4FD2175FBFF006F87EB /* Constants.swift */,
+				F48AD4FF2175FCA7006F87EB /* BaseViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F48AD5012175FE2B006F87EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD4F92175F96F006F87EB /* UIViewControllerExtensions.swift */,
+				F48AD4FB2175FB8D006F87EB /* UIAlertControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F48AD506217603CE006F87EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F48AD504217601D6006F87EB /* Bounds.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +190,7 @@
 				F48AD4C02175EC98006F87EB /* Sources */,
 				F48AD4C12175EC98006F87EB /* Frameworks */,
 				F48AD4C22175EC98006F87EB /* Resources */,
+				F48AD4E22175F315006F87EB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,8 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48AD4CA2175EC98006F87EB /* ViewController.swift in Sources */,
+				F48AD4FA2175F96F006F87EB /* UIViewControllerExtensions.swift in Sources */,
 				F48AD4C82175EC98006F87EB /* AppDelegate.swift in Sources */,
+				F48AD4FC2175FB8D006F87EB /* UIAlertControllerExtensions.swift in Sources */,
+				F48AD4F62175F43D006F87EB /* InputViewController.swift in Sources */,
+				F48AD4F82175F451006F87EB /* ListViewController.swift in Sources */,
+				F48AD5002175FCA7006F87EB /* BaseViewController.swift in Sources */,
+				F48AD505217601D6006F87EB /* Bounds.swift in Sources */,
+				F48AD5032175FE42006F87EB /* API.swift in Sources */,
+				F48AD4FE2175FBFF006F87EB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +408,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRCF49APML;
-				INFOPLIST_FILE = DevChallenge/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DevChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.doitsolutions.DevChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +430,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRCF49APML;
-				INFOPLIST_FILE = DevChallenge/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DevChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.doitsolutions.DevChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
